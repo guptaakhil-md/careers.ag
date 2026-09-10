@@ -65,7 +65,7 @@
   <div class="card" id="posting">
     <span class="badge">Filling fast</span><span class="badge blue">Urgent hire</span>
     <h1>Open Position (Full-time, Unpaid)</h1>
-    <p class="sub">Job ID: WORTH-1809 &nbsp;·&nbsp; Posted today &nbsp;·&nbsp; 1 opening, 0 remaining after you</p>
+    <p class="sub">Posted today &nbsp;·&nbsp; 1 opening, 0 remaining after you</p>
 
     <div class="meta">
       <div><b>Role</b>Person Who Makes My Time Worth It</div>
@@ -127,7 +127,6 @@
       </div>
 
       <button type="submit" id="btn">Submit Application</button>
-      <p class="fine">By submitting, you agree that HR may screenshot this.</p>
       <p class="err" id="err">Our servers are overwhelmed by applicants. Please try again in a moment.</p>
     </form>
   </div>
@@ -142,7 +141,7 @@
     <div class="check">✓</div>
     <h2>Application received.</h2>
     <p>HR will contact you shortly.</p>
-    <p class="foot">Reference: WORTH-1809 · Do not reply to this screen. Reply to the Hiring Manager instead.</p>
+    <p class="foot">Do not reply to this screen. Reply to the Hiring Manager instead.</p>
   </div>
 
 </div>
@@ -150,7 +149,7 @@
 <script>
   // 1. Get a free access key at https://web3forms.com (they email it to you).
   // 2. Paste it below. Every submission gets emailed to that address.
-  const ACCESS_KEY = "198a833c-b270-43c5-b1d8-be8cfd968b7f";
+  const ACCESS_KEY = "PASTE_YOUR_WEB3FORMS_ACCESS_KEY_HERE";
 
   const form = document.getElementById('app');
   const btn = document.getElementById('btn');
@@ -174,7 +173,7 @@
     delete data.botcheck;
     const payload = {
       access_key: ACCESS_KEY,
-      subject: "New application: " + (data.Applicant || "Unknown") + " (WORTH-1809)",
+      subject: "New application: " + (data.Applicant || "Unknown"),
       from_name: "WORTHIT Careers",
       ...data
     };
